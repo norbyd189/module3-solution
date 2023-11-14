@@ -21,16 +21,18 @@ body {
 
 .navbar-brand {
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #557c3e;
   font-size: 1.5em;
-  text-transform: uppercase;
+/*  text-transform: uppercase; */
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
-  margin-bottom: 0;
+/*  margin-bottom: 0; */
+  padding-bottom: 25px;
   line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -43,6 +45,9 @@ body {
   margin-top: 15px;
 }
 .navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+.navbar-brand h1 {
   vertical-align: middle;
 }
 
@@ -58,6 +63,11 @@ body {
 }
 #nav-list a span {
   font-size: 1.8em;
+}
+#nav-list li {
+  color: #951C49;
+  font-size: 1.8em;
+  text-align: center;
 }
 
 #phone {
@@ -121,13 +131,14 @@ body {
 }
 
 #menu-tile, #specials-tile, #map-tile {
-  height: 250px;
+  height: 250px; 
   width: 100%;
   margin-bottom: 15px;
   position: relative;
   border: 2px solid #3F0C1F;
   overflow: hidden;
 }
+/*
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
@@ -135,14 +146,15 @@ body {
   background: url('../images/menu-tile.jpg') no-repeat;
   background-position: center;
 }
+*/
 #specials-tile {
   background: url('../images/specials-tile.jpg') no-repeat;
   background-position: center;
 }
 #menu-tile span, #specials-tile span, #map-tile span {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   text-align: center;
   font-size: 1.6em;
@@ -181,6 +193,39 @@ body {
 #menu-categories-title + div {
   margin-bottom: 50px;
 }
+
+.menu-item {
+  position: relative;
+  top: 0;
+  background-color: #999999;
+  margin: 15px;
+  padding: 25px;
+  border: 3px solid #000;
+}
+
+.menu-item p {
+  margin-top: 18px;
+  text-align: left;
+  font-size: 100%;
+}
+
+
+.menu-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*right: 0px;*/
+  width: 100%;
+  text-align: center;
+  background: green;
+  padding: 6px 90px;
+  /*border-left: 2px solid #000;*/
+  border-bottom: 2px solid #000;
+}
+
+
+
+
 /* END MENU CATEGORIES PAGE */
 
 /* SINGLE CATEGORY PAGE */
@@ -330,7 +375,8 @@ h3.menu-item-title {
     padding: 0;
   }
   #menu-tile, #specials-tile {
-    width: 360px;
+/*    width: 360px; */
+    width: 100%;
     margin: 0 auto 15px;
   }
 
